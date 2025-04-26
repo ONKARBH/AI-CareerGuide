@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Quiz - CareerGuide</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/logo.png" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <img src="assets/logo.png" alt="CareerGuide Logo" class="logo">
+                <h1>CareerGuide</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="career-paths.html">Career Paths</a></li>
+                    <li><a href="quiz.html" class="active">Career Quiz</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" class="theme-toggle">🌓</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="quiz-intro">
+            <div class="container">
+                <h2>Career Aptitude Quiz</h2>
+                <p>This quiz will help identify careers that match your skills, interests, and personality. Answer honestly for the most accurate results.</p>
+                <div class="quiz-stats">
+                    <div class="stat-card">
+                        <span class="stat-number">10</span>
+                        <span class="stat-label">Questions</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">5</span>
+                        <span class="stat-label">Minutes</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Free</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="quiz-container">
+            <div class="container">
+                <form id="career-quiz">
+                    <div class="quiz-progress">
+                        <div class="progress-bar" id="quiz-progress"></div>
+                        <span id="progress-text">Question 1 of 10</span>
+                    </div>
+
+                    <div class="question active" id="question1">
+                        <h3>1. When working on a project, you prefer to:</h3>
+                        <div class="options">
+                            <label>
+                                <input type="radio" name="q1" value="tech">
+                                <span>Solve technical problems</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="q1" value="health">
+                                <span>Help others directly</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="q1" value="edu">
+                                <span>Teach or explain concepts</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="q1" value="creative">
+                                <span>Create something new</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="question" id="question2">
+                        <h3>2. Your ideal work environment is:</h3>
+                        <div class="options">
+                            <label>
+                                <input type="radio" name="q2" value="tech">
+                                <span>An office with cutting-edge technology</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="q2" value="health">
+                                <span>A hospital or clinic</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="q2" value="edu">
+                                <span>A classroom or educational setting</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="q2" value="outdoor">
+                                <span>Outdoors or in the field</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="question" id="question3">
+                        <h3>3. Which of these activities do you enjoy most?</h3>
+                        <div class="options">
+                            <label>
+                                <input type="radio" name="q3" value="tech">
+                                <span>Coding or building technical systems</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="q3" value="health">
+                                <span>Caring for people's well-being</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="q3" value="edu">
+                                <span>Explaining complex topics to others</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="q3" value="creative">
+                                <span>Designing or artistic expression</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="question" id="question4">
+                        <h3>4. How do you approach problem-solving?</h3>
+                        <div class="options">
+                            <label>
+                                <input type="radio" name="q4" value="tech">
+                                <span>Analyze data and find logical solutions</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="q4" value="health">
+                                <span>Consider people's needs and emotions</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="q4" value="edu">
+                                <span>Break it down into teachable parts</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="q4" value="creative">
+                                <span>Think outside the box for innovative solutions</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="question" id="question5">
+                        <h3>5. What type of tasks keep you engaged?</h3>
+                        <div class="options">
+                            <label>
+                                <input type="radio" name="q5" value="tech">
+                                <span>Debugging complex systems</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="q5" value="health">
+                                <span>Assisting people in need</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="q5" value="edu">
+                                <span>Developing learning materials</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="q5" value="creative">
+                                <span>Brainstorming creative ideas</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="question" id="question6">
+                        <h3>6. Which subject interests you most?</h3>
+                        <div class="options">
+                            <label>
+                                <input type="radio" name="q6" value="tech">
+                                <span>Computer Science</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="q6" value="health">
+                                <span>Biology/Medicine</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="q6" value="edu">
+                                <span>Education/Psychology</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="q6" value="creative">
+                                <span>Arts/Design</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="question" id="question7">
+                        <h3>7. How do you prefer to communicate?</h3>
+                        <div class="options">
+                            <label>
+                                <input type="radio" name="q7" value="tech">
+                                <span>Through precise technical documentation</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="q7" value="health">
+                                <span>Through empathetic personal interactions</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="q7" value="edu">
+                                <span>Through clear explanations and teaching</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="q7" value="creative">
+                                <span>Through visual or creative presentations</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="question" id="question8">
+                        <h3>8. What's your ideal weekend activity?</h3>
+                        <div class="options">
+                            <label>
+                                <input type="radio" name="q8" value="tech">
+                                <span>Building a tech project or gadget</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="q8" value="health">
+                                <span>Volunteering to help others</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="q8" value="edu">
+                                <span>Reading or attending a workshop</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="q8" value="creative">
+                                <span>Creating art or designing something</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="question" id="question9">
+                        <h3>9. Which skill comes most naturally to you?</h3>
+                        <div class="options">
+                            <label>
+                                <input type="radio" name="q9" value="tech">
+                                <span>Logical reasoning and analysis</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="q9" value="health">
+                                <span>Understanding people's needs</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="q9" value="edu">
+                                <span>Explaining concepts clearly</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="q9" value="creative">
+                                <span>Imagination and creative thinking</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="question" id="question10">
+                        <h3>10. What type of challenges do you enjoy?</h3>
+                        <div class="options">
+                            <label>
+                                <input type="radio" name="q10" value="tech">
+                                <span>Complex technical problems</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="q10" value="health">
+                                <span>Helping people through difficult situations</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="q10" value="edu">
+                                <span>Finding ways to make learning engaging</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="q10" value="creative">
+                                <span>Expressing ideas in unique ways</span>
+                            </label>
+                        </div>
+                    </div>
+
+                     
+                    </div>
+
+                    <div class="quiz-navigation">
+                        <button type="button" class="btn btn-secondary" id="prev-btn" disabled>Previous</button>
+                        <button type="button" class="btn" id="next-btn">Next</button>
+                        <button type="submit" class="btn btn-primary" id="submit-btn" style="display: none;">Get Results</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="quiz-tips">
+            <div class="container">
+                <h3>Tips for Accurate Results</h3>
+                <ul>
+                    <li>Answer honestly, not how you think you "should" answer</li>
+                    <li>Don't overthink - go with your first instinct</li>
+                    <li>Imagine yourself in each scenario</li>
+                    <li>Consider both your current skills and interests you'd like to develop</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>CareerGuide</h3>
+                    <p>Helping individuals find fulfilling careers since 2023.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="career-paths.html">Career Paths</a></li>
+                        <li><a href="quiz.html">Career Quiz</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Email: onkarbhosale591@gmail.com</p>
+                    <p>Phone: +91 9552801130</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 CareerGuide. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="chatbot-container">
+        <div class="chatbot-header">
+            <h4>Career Assistant</h4>
+            <button class="chatbot-close">×</button>
+        </div>
+        <div class="chatbot-messages">
+            <div class="chatbot-message bot-message">
+                Hello! I'm your career assistant. How can I help you today?
+            </div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" placeholder="Ask me about careers...">
+            <button class="chatbot-send">Send</button>
+        </div>
+    </div>
+    <button class="chatbot-toggle">💬</button>
+
+    <script src="script.js"></script>
+    <script src="chatbot.js"></script>
+</body>
+</html>

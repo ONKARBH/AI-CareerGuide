@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Paths - CareerGuide</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/logo.png" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <img src="assets/logo.png" alt="CareerGuide Logo" class="logo">
+                <h1>CareerGuide</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="career-paths.html" class="active">Career Paths</a></li>
+                    <li><a href="quiz.html">Career Quiz</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" class="theme-toggle">🌓</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="paths-hero">
+            <div class="container">
+                <h2>Explore Career Paths</h2>
+                <p>Browse careers by industry to find your perfect match.</p>
+            </div>
+        </section>
+
+        <section class="paths-container">
+            <div class="container">
+                <div class="paths-filter">
+                    <input type="text" id="path-search" placeholder="Search careers...">
+                    <select id="path-category">
+                        <option value="all">All Categories</option>
+                        <option value="tech">Technology</option>
+                        <option value="health">Healthcare</option>
+                        <option value="edu">Education</option>
+                        <option value="business">Business</option>
+                        <option value="creative">Creative</option>
+                    </select>
+                </div>
+
+                <div class="paths-grid">
+                    <div class="path-card" data-category="tech">
+                        <div class="path-icon">💻</div>
+                        <h3>Technology</h3>
+                        <p>Careers in software development, IT, cybersecurity, and more.</p>
+                        <a href="career-tech.html" class="btn btn-small">Explore</a>
+                    </div>
+                    <div class="path-card" data-category="health">
+                        <div class="path-icon">🏥</div>
+                        <h3>Healthcare</h3>
+                        <p>Careers in medicine, nursing, therapy, and health services.</p>
+                        <a href="career-health.html" class="btn btn-small">Explore</a>
+                    </div>
+                    <div class="path-card" data-category="edu">
+                        <div class="path-icon">📚</div>
+                        <h3>Education</h3>
+                        <p>Careers in teaching, administration, and educational support.</p>
+                        <a href="career-edu.html" class="btn btn-small">Explore</a>
+                    </div>
+                    <div class="path-card" data-category="business">
+                        <div class="path-icon">💼</div>
+                        <h3>Business</h3>
+                        <p>Careers in management, finance, marketing, and entrepreneurship.</p>
+                        <a href="#" class="btn btn-small">Explore</a>
+                    </div>
+                    <div class="path-card" data-category="creative">
+                        <div class="path-icon">🎨</div>
+                        <h3>Creative</h3>
+                        <p>Careers in design, writing, arts, and media production.</p>
+                        <a href="#" class="btn btn-small">Explore</a>
+                    </div>
+                    <div class="path-card" data-category="tech">
+                        <div class="path-icon">🔬</div>
+                        <h3>Science</h3>
+                        <p>Careers in research, laboratory work, and scientific analysis.</p>
+                        <a href="#" class="btn btn-small">Explore</a>
+                    </div>
+                    <div class="path-card" data-category="health">
+                        <div class="path-icon">🧠</div>
+                        <h3>Mental Health</h3>
+                        <p>Careers in psychology, counseling, and social work.</p>
+                        <a href="#" class="btn btn-small">Explore</a>
+                    </div>
+                    <div class="path-card" data-category="business">
+                        <div class="path-icon">📊</div>
+                        <h3>Data & Analytics</h3>
+                        <p>Careers in data science, business intelligence, and statistics.</p>
+                        <a href="#" class="btn btn-small">Explore</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="paths-popular">
+            <div class="container">
+                <h3>Popular Careers Right Now</h3>
+                <div class="popular-grid">
+                    <div class="popular-card">
+                        <h4>Data Scientist</h4>
+                        <div class="popular-meta">
+                            <span class="salary">$120,000</span>
+                            <span class="growth">35% growth</span>
+                        </div>
+                        <p>Analyze complex data to help organizations make decisions.</p>
+                        <a href="#" class="btn-link">Learn more →</a>
+                    </div>
+                    <div class="popular-card">
+                        <h4>Cybersecurity Analyst</h4>
+                        <div class="popular-meta">
+                            <span class="salary">$105,000</span>
+                            <span class="growth">33% growth</span>
+                        </div>
+                        <p>Protect organizations from digital threats and attacks.</p>
+                        <a href="#" class="btn-link">Learn more →</a>
+                    </div>
+                    <div class="popular-card">
+                        <h4>Nurse Practitioner</h4>
+                        <div class="popular-meta">
+                            <span class="salary">$115,000</span>
+                            <span class="growth">45% growth</span>
+                        </div>
+                        <p>Provide advanced nursing care with prescription authority.</p>
+                        <a href="#" class="btn-link">Learn more →</a>
+                    </div>
+                    <div class="popular-card">
+                        <h4>UX Designer</h4>
+                        <div class="popular-meta">
+                            <span class="salary">$95,000</span>
+                            <span class="growth">22% growth</span>
+                        </div>
+                        <p>Create user-friendly interfaces for digital products.</p>
+                        <a href="#" class="btn-link">Learn more →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>CareerGuide</h3>
+                    <p>Helping individuals find fulfilling careers since 2023.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="career-paths.html">Career Paths</a></li>
+                        <li><a href="quiz.html">Career Quiz</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Email: onkarbhosale591@gmail.com</p>
+                    <p>Phone: +91 9552801130</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 CareerGuide. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="chatbot-container">
+        <div class="chatbot-header">
+            <h4>Career Assistant</h4>
+            <button class="chatbot-close">×</button>
+        </div>
+        <div class="chatbot-messages">
+            <div class="chatbot-message bot-message">
+                Hello! I'm your career assistant. How can I help you today?
+            </div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" placeholder="Ask me about careers...">
+            <button class="chatbot-send">Send</button>
+        </div>
+    </div>
+    <button class="chatbot-toggle">💬</button>
+
+    <script src="script.js"></script>
+    <script src="chatbot.js"></script>
+</body>
+</html>
